@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+
+body 
+{
+  padding: 1rem; 
+  font: 100%/1.4 Sans-Serif;
+}
+
+.dropbtn
+{
+display:none;
+}
+
+.tab1
+{
+background:purple;
+}
+
+.tab2
+{
+background: #3498db;
+}
+
+.tab3
+{
+background:#e67e22;
+}
+
+.convert-tabs ul 
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+
+.convert-tabs li 
+{
+  display: inline-block;
+  padding: 0;
+  
+}
+
+.convert-tabs li:nth-child(1) .active 
+{
+  color: #fff;
+  background: plum;
+  border: 2px solid plum;
+  border-bottom-color: plum;
+}
+
+.convert-tabs li:nth-child(2) .active 
+{
+  color: #fff;
+  background: lightskyblue;
+  border: 2px solid  lightskyblue;
+  border-bottom-color: lightskyblue;
+}
+
+.convert-tabs li:nth-child(3) .active 
+{
+  color: #fff;
+  background:BurlyWood ;
+  border: 2px solid BurlyWood ;
+  border-bottom-color: BurlyWood ;
+}
+
+.convert-tabs a 
+{
+  display: inline-block;  
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.convert-tabs a.active 
+{  
+  position: relative;  
+}
+
+.tabs > div 
+{
+  display: none;
+  padding: 1rem;
+}
+
+.tabs > div:nth-of-type(1) 
+{
+  border: 5px solid plum;
+}
+
+.tabs > div:nth-of-type(2) 
+{
+  border: 5px solid  lightskyblue;
+}
+
+.tabs > div:nth-of-type(3) 
+{
+  border: 5px solid BurlyWood;
+}
+
+.tabs > .active 
+{
+  display: block;
+}
+
+@media (max-width: 700px) 
+{
+	.dropbtn 
+	{
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		display:block;
+		width:100%;
+	}
+
+	.dropdown-content 
+	{
+		display: none;
+		background-color: #f9f9f9;
+		box-shadow: 0px 8px 16px 0px rgba(1,1,1,1);
+	}
+
+	.dropdown-content a 
+	{    
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown a:hover 
+	{
+		background-color: transparent;
+	}
+
+	.show 
+	{
+		display:block;
+	}
+
+	.convert-tabs ul 
+	{    
+		border-bottom: 0;
+		overflow: hidden;
+		position: relative;
+	}
+  
+	.convert-tabs ul.open a 
+	{
+		display: block;
+	}
+ 
+	.convert-tabs li 
+	{
+		display: block;
+	}
+  
+	.convert-tabs li:hover
+	{		
+		background:#555;
+	}
+
+	.convert-tabs a:hover 
+	{
+		color:#fff;
+	}
+  
+	.convert-tabs a 
+	{    
+		color:#fff;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+  
+	.convert-tabs a.active 
+	{    
+		border: 0;
+		z-index: 1;
+	} 
+
+	.convert-tabs a.active:hover 
+	{	
+		background:#555;
+		border:none;
+	}
+ 
+}
